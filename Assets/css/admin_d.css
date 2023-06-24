@@ -1,0 +1,15 @@
+/*! ==================================================== !*/
+/* ESTILOS DE LA SECCION HOME ADMIN */
+section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .cont-table{
+    width: 80%;
+}
+.text-center .btn{
+    width: 40px;
+    height: 40px;
+}

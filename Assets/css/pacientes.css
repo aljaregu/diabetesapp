@@ -1,0 +1,122 @@
+/*! ==================================================== !*/
+/* ESTILOS GENERALES */
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+/*! ==================================================== !*/
+/* ESTILOS SECCION VISTA PACIENTES - DOCTOR */
+section h2{
+    width: 95%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: #363753;
+    background-color: #5CD2C6;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.cont-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card-p{
+    position: relative;
+    width: 355px;
+    height: 400px;
+    margin: 20px;
+}
+.card-p .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    overflow: hidden;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.card-p .front{
+    transform: perspective(600px) rotateX(0deg);
+    -webkit-transform: perspective(600px) rotateX(0deg);
+    -moz-transform: perspective(600px) rotateX(0deg);
+    -ms-transform: perspective(600px) rotateX(0deg);
+    -o-transform: perspective(600px) rotateX(0deg);
+    box-shadow: 0 5px 10px #363753;
+}
+.card-p .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-p .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fefefe;
+    background: #363753;
+    text-align: center;
+}
+.card-p .back{
+    transform: perspective(600px) rotateY(180deg);
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    -moz-transform: perspective(600px) rotateY(180deg);
+    -ms-transform: perspective(600px) rotateY(180deg);
+    -o-transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: start;
+    box-shadow: 0 5px 10px #363753;
+}
+.card-p .back h3{
+    text-decoration: underline;
+    font-size: 20px;
+    margin-top: 20px;
+    letter-spacing: 1px;    
+}
+.card-p .back p{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+/*! ==================================================== !*/
+/* EFECTO DE ROTACION CARD */
+.card-p:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    -moz-transform: perspective(600px) rotateY(180deg);
+    -ms-transform: perspective(600px) rotateY(180deg);
+    -o-transform: perspective(600px) rotateY(180deg);
+}
+.card-p:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+    -webkit-transform: perspective(600px) rotateY(360deg);
+    -moz-transform: perspective(600px) rotateY(360deg);
+    -ms-transform: perspective(600px) rotateY(360deg);
+    -o-transform: perspective(600px) rotateY(360deg);
+}

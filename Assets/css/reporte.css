@@ -1,0 +1,105 @@
+/*! ==================================================== !*/
+/* ESTILOS GENERALES */
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.container-page{
+    display: flex;
+    flex-direction: column;
+}
+/*! ==================================================== !*/
+/* ESTILOS DEL CONTAINER GENERAL */
+.container {
+    margin: 0 0 50px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+/*! ==================================================== !*/
+/* ESTILOS DE LA TABLA DATOS */
+.information-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #363753;
+    border-radius: 1em;
+    padding: 1em;
+    margin-right: 10px;
+}
+/*! ==================================================== !*/
+/* ESTILOS DE LA TABLA MISCELANEOS */
+.miscelaneos-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #363753;
+    border-radius: 1em;
+    padding: 1em;
+    margin-left: 10px;
+}
+.title2,
+.title3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    background-color: #5CD2C6;
+    text-align: center;
+    border-radius: 20px;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+}
+.miscelaneos{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+label {
+    height: 35px;
+    display: block;
+    margin: 20px 0px;
+}
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.notafinal{
+    margin: 2em;
+    text-align: center;
+}
+.input{
+    display: inline-block;
+    padding: 10px;
+    background-color: #363753;
+    color: #fff;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    font-size: 16px;
+}
+.input-container{
+    margin: 25px 0;
+    display: flex;
+    justify-content: start;
+}
+input[type="submit"]:hover {
+    background-color: #1d1e2c;
+}

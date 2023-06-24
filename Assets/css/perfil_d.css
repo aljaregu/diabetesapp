@@ -1,0 +1,116 @@
+/*! ==================================================== !*/
+/* ESTILOS GENERALES */
+section {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*! ==================================================== !*/
+  /* CUADRO DE FRASE INFORMATIVA */
+  .motivation {
+    width: 80%;
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    border: solid 4px #363753;
+    padding: 10px;
+  }
+  
+  .motivation img {
+    width: 150px;
+  }
+  
+  .frase h2 {
+    font-size: 28px;
+  }
+  
+  .frase {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .profile {
+    margin: 35px 0;
+    padding: 25px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, .4);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid #363753;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+  }
+  
+  .profile img {
+    width: 300px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 5px solid #363753;
+  }
+  
+  .profile .data-paciente {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile .data-paciente label {
+    margin: 15px 0 3px 0;
+    font-size: 20px;
+  }
+  
+  .profile .data-paciente p {
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    text-align: center;
+    background-color: #92d7ff;
+    font-size: 18px;
+  }
+  
+  /*! ==================================================== !*/
+  /* ESTILOS DE RESPONSIVE */
+  @media(max-width: 1000px) {
+    .profile .data-paciente {
+      width: 100%;
+    }
+  }
+  
+  @media(max-width: 470px) {
+    .profile img {
+      width: 250px;
+    }
+  }
+  
+  @media(max-width: 350px) {
+    .profile img {
+      width: 200px;
+    }
+  }
